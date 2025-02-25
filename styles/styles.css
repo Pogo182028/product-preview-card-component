@@ -114,6 +114,10 @@ img {
   font-weight: 700;
 }
 
+.product__button:hover {
+  background-color: var(--green-700);
+}
+
 .product__button-img {
   border-radius: 0;
 }
