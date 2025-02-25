@@ -117,3 +117,56 @@ img {
 .product__button-img {
   border-radius: 0;
 }
+
+@media (width >= 600px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (width >= 800px) {
+  .card {
+    display: flex;
+  }
+
+  .container {
+    width: 70rem;
+  }
+
+  .card__image {
+    width: 80%;
+  }
+
+  img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.5rem;
+  }
+
+  .product {
+    width: 75%;
+    padding: 0 4rem;
+  }
+
+  .product__category {
+    margin: 3rem 0;
+  }
+
+  .product__title {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .product__description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  .product__price {
+    margin-bottom: 3rem;
+  }
+
+  .product__price--discount {
+    font-size: 3.5rem;
+  }
+}
