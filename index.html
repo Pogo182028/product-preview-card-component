@@ -12,30 +12,45 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <main>
-      <article class="card">
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="image-product"
-          srcset="./images/image-product-desktop.jpg 600w"
-          sizes="(min-width: 740px) 600px, (min-width: 340px) 313px, calc(-1435vw + 4905px)"
-        />
-        <div class="card__content">
-          <p>Perfume</p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>
+    <main class="container-flex">
+      <article class="card container">
+        <picture>
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 1020px)"
+          />
+          <img src="./images/image-product-mobile.jpg" alt="image-product" />
+        </picture>
+
+        <div class="product">
+          <p class="product__category">P e r f u m e</p>
+          <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product__description">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="prices">
-            <p>$149.99</p>
-            <p>$169.99</p>
+          <div class="product__price">
+            <p class="product__price--discount">$149.99</p>
+            <p class="product__price--original">$169.99</p>
           </div>
-          <button>
-            <img src="./images/icon-cart.svg" alt="icon-cart" />
+          <button class="product__button">
+            <img
+              class="product__button-img"
+              src="./images/icon-cart.svg"
+              alt="icon-cart"
+            />
             Add to Cart
           </button>
         </div>

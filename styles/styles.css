@@ -1,0 +1,119 @@
+:root {
+  --font-monserrat: "Montserrat", serif; /**weights: 500, 700*/
+  --font-fraunces: "Fraunces", serif; /**weights: 700*/
+  --size-paragraph: 1.4rem;
+
+  /** Primary Colors */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+
+  /** Neutral Colors */
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-monserrat);
+  font-size: var(--size-paragraph);
+  font-weight: 500;
+  color: var(--grey);
+  background-color: var(--cream);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: min(95%, 120rem);
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 1.5rem;
+}
+
+.product {
+  padding: 0 2rem;
+}
+
+.product__category {
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.product__title {
+  color: var(--black);
+  font-family: var(--font-fraunces);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.product__description {
+  text-wrap: balance;
+  margin-bottom: 2rem;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product__price--discount {
+  color: var(--green-500);
+  font-family: var(--font-fraunces);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.product__price--original {
+  text-decoration: line-through;
+}
+
+.product__button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--green-500);
+  color: var(--white);
+  padding: 2rem 0;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.product__button-img {
+  border-radius: 0;
+}
